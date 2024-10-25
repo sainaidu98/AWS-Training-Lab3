@@ -17,7 +17,7 @@ phases:
       - echo Pushing the Docker image to ECR...
       - docker push 864899837235.dkr.ecr.ap-south-1.amazonaws.com/sohail/mywebsite:1
       - echo Writing image definitions file...
-      - printf '[{"name":"mynewcontainerforecs","imageUri":"%s"}]' 864899837235.dkr.ecr.ap-south-1.amazonaws.com/sohail/mywebsite:1 > imagedefinitions.json
+      - printf '[{"name":"Sai-Lab2-Container","imageUri":"%s"}]' 864899837235.dkr.ecr.ap-south-1.amazonaws.com/sohail/mywebsite:1 > imagedefinitions.json
  
 artifacts:
   files: imagedefinitions.json
